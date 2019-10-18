@@ -1,0 +1,85 @@
+- model: Users.User
+  pk: 2
+  fields:
+    username: tecnico
+    email: dylan.ayala@sondeos.com.ar
+    password: pbkdf2_sha256$150000$gkfaoi0hyJsd$YxsOLq8UQ5pdhxETJnGFHDQ04R7G3HJJ5F2lGklwNao=
+    is_superuser: 0
+    is_staff: 0
+    is_active: 1
+    groups: [3]
+
+- model: Stock.Owner
+  pk: 1
+  fields:
+    name: Sondeos
+- model: Stock.Owner
+  pk: 2
+  fields:
+    name: Iplan
+
+
+- model: Stock.Locations
+  pk: 1
+  fields:
+    name: Deposito Sondeos
+    address: Chutro 2
+    user: 1
+    types: 1
+
+- model: Stock.Locations
+  pk: 2
+  fields:
+    name: Tecnico Dylan
+    address: Mochila
+    user: 2
+    types: 2
+
+
+- model: Stock.Category
+  pk: 1
+  fields:
+    name: Notebooks
+
+- model: Stock.Category
+  pk: 2
+  fields:
+    name: Networking
+
+- model: Stock.Category
+  pk: 3
+  fields:
+    name: Cableado
+
+- model: Stock.Category
+  pk: 4
+  fields:
+    name: Conectores
+
+
+- model: Stock.Brand
+  pk: 1
+  fields:
+    name: Dell
+- model: Stock.Brand
+  pk: 2
+  fields:
+    name: Asus
+- model: Stock.Brand
+  pk: 3
+  fields:
+    name: Lenovo
+- model: Stock.Brand
+  pk: 4
+  fields:
+    name: Cisco
+
+
+- model: Stock.Materials
+  pk: 1
+  fields:
+    name: Notebook Asus As400
+    category: 1
+    brand: 2
+    model: AS400
+    quantity: 1

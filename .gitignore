@@ -1,0 +1,9 @@
+.idea
+Modules/*/migrations
+media
+.vscode
+*/__pycache__
+/*/*/*/__pycache__
+/*/*/__pycache__
+logs
+Api/settings.py

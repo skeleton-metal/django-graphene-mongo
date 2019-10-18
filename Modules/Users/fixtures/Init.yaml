@@ -1,0 +1,48 @@
+- model: Stock.Status
+  pk: 1
+  fields:
+    name: disponible
+- model: Stock.Status
+  pk: 2
+  fields:
+    name: implementado
+- model: Stock.Status
+  pk: 3
+  fields:
+    name: defectuoso
+
+
+- model: Stock.TypeLocation
+  pk: 1
+  fields:
+    name: deposito
+- model: Stock.TypeLocation
+  pk: 2
+  fields:
+    name: tecnico
+
+
+- model: auth.Group
+  pk: 1
+  fields:
+    name: admin
+- model: auth.Group
+  pk: 2
+  fields:
+    name: supervisor
+- model: auth.Group
+  pk: 3
+  fields:
+    name: tecnico
+
+
+- model: Users.User
+  pk: 1
+  fields:
+    username: admin
+    email: soporte@sondeos.com.ar
+    password: pbkdf2_sha256$150000$gkfaoi0hyJsd$YxsOLq8UQ5pdhxETJnGFHDQ04R7G3HJJ5F2lGklwNao=
+    is_superuser: 1
+    is_staff: 1
+    is_active: 1
+    groups: [1]
