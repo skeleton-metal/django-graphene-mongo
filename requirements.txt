@@ -13,4 +13,4 @@ Pillow>=5.4.1
 djongo>=1.2.36
 pymongo>=3.2.0
 dataclasses>=0.1
-sqlparse==0.2.4
+sqlparse==0.4.4
